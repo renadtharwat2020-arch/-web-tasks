@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+        table { border: 2px solid gray; border-spacing: 8px; width: 320px; }
+        td    { border: 1px solid gray; text-align: center; padding: 10px; }
+    </style>
+</head>
+<body>
+
+    <table>
+        <!-- Row 1: "name" spans 2 columns, "Address" spans 2 rows -->
+        <tr>
+            <td colspan="2"><b>name</b></td>
+            <td rowspan="2"><b>Address</b></td>
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <td><b>First</b></td>
+            <td><b>Last</b></td>
+        </tr>
+
+        <!-- Row 3: green cell spans all 3 columns -->
+        <tr>
+            <td colspan="3" bgcolor="green">All the data is here</td>
+        </tr>
+
+        <!-- Row 4: "Hamada" spans 2 columns and 2 rows -->
+        <tr>
+            <td colspan="2" rowspan="2">Hamada</td>
+            <td style="color: red;">cairo</td>
+        </tr>
+
+        <!-- Row 5 -->
+        <tr>
+            <td>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</td>
+        </tr>
+    </table>
+
+</body>
+</html>
